@@ -1,26 +1,28 @@
 /*
-1. Desenvolva um algoritmo que leia a altura de 15 pessoas. Este
-programa deverá calcular e mostrar:
-a. A menor altura do grupo;
-b. A maior altura do grupo;
+2. Pedro tem 1,50m de altura e cresce 2 centímetros por ano, enquanto
+Lucas tem 1,10m de altura e cresce 3 centímetros por ano.
+Construa um algoritmo que calcule e imprima quantos anos serão
+necessários para que:
+a. Lucas e Pedro tenham o mesmo tamanho;
+b. Lucas seja maior que Pedro.
 */
 
-let maiorAltura = 0
-let menorAltura = 0
+let alturaPedro = 1.5;
+let alturaLucas = 1.1;
 
-for (i = 1; i<=15; i++){
-    let altura = Number(prompt(`Digite a altura da pessoa ${i}`));
+let contagemAnos = 0;
 
-    if(altura || maiorAltura == 0){
-        maiorAltura = altura
-    }
-
-    if(altura|| menorAltura == 0){
-        menorAltura = altura
-    }
-
+while (alturaPedro >= alturaLucas){
+    alturaPedro = alturaPedro + 0.02;
+    alturaLucas = alturaLucas + 0.03;
+    contagemAnos++
 }
-console.log(`A maior altura é ${maiorAltura}`);
-console.log(`A menor altura é ${menorAltura}`);
+console.log(`Pasaram ${contagemAnos} anos e lucas e pedro tem a mesma altura.`)
+console.log(`altur pedro ${alturaPedro} altura lucas ${alturaLucas}`)
+
+
+
+
+
 
 
