@@ -1,0 +1,6 @@
+let multiplicando = Number(prompt("Digite o número para a tabuada:"));
+let quantidade = Number(prompt("Digite a quantidade de iterações desejada:"));
+
+for (let i = 1; i <= quantidade; i++) {
+    document.write(`${i} * ${multiplicando} = ${i * multiplicando} <br>`);
+}
